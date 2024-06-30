@@ -1,0 +1,43 @@
+{
+  "name": "ts-utils",
+  "version": "1.0.0",
+  "description": "Keeping my TypeScript utilities safe :)",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "lint": "standard --fix",
+    "lint:staged": "lint-staged",
+    "test": "node --test --experimental-test-coverage",
+    "test:coverage": "node --test --experimental-test-coverage --test-reporter=lcov --test-reporter-destination=lcov.info",
+    "prepare": "husky install"
+  },
+  "keywords": [
+    "utils",
+    "utilities",
+    "helpers",
+    "typescript",
+    "node.js"
+  ],
+  "author": {
+    "name": "Icaro Silva",
+    "email": "ikaromarlon@gmail.com",
+    "url": "https://www.linkedin.com/in/ikaromarlon/"
+  },
+  "license": "GPLv3",
+  "devDependencies": {
+    "git-commit-msg-linter": "^5.0.4",
+    "husky": "^8.0.0",
+    "lint-staged": "^15.2.0",
+    "ts-node": "^10.9.2",
+    "ts-standard": "^12.0.2"
+  },
+  "ts-standard": {
+    "project": "./tsconfig.json",
+    "env": [
+      "node"
+    ]
+  }
+}
