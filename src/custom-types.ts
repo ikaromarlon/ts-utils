@@ -17,4 +17,6 @@ export type NoFunctionProps<T> = Pick<
   }[keyof T]
 >;
 
-export type RawObject<T> = NoFunctionProps<NoPersistenceProps<T>>;
+export type Objectify<T> = {
+  [K in keyof T]: T[K];
+} & {};
